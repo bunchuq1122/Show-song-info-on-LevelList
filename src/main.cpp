@@ -33,6 +33,7 @@ class $modify(showSongInf, LevelCell) {
         auto menu = CCMenu::create();
 		menu->setID(Mod::get()->getID() + "/touchableSongInfo");
 		menu->setPosition(50.f,33.f);
+		menu->addChild(btn);
 		auto chompo = mainLayer->getChildByID("chompo-icon");
 		auto ncs = mainLayer->getChildByID("ncs-icon");
 		if (chompo) {
@@ -40,7 +41,6 @@ class $modify(showSongInf, LevelCell) {
 		}else if (ncs) {
 			menu->setPositionX(85.f);
 		}
-        menu->addChild(btn);
 		mainLayer->addChild(menu);
     }
 
