@@ -5,7 +5,7 @@
 	},
 	"id": "bunchuq1122.show-song-info-on-levellist",
 	"name": "Show song info on LevelList",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "Bunchuq1122",
 	"description": "Lets you click the song name",
 	"dependencies": {
