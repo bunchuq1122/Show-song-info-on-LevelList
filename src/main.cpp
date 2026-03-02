@@ -48,10 +48,11 @@ class $modify(showSongInf, LevelCell) {
 		if (!this->m_level) return;
 
 		int songID = this->m_level->m_songID;
-		if (songID <= 0) return;
+		if (songID <= 0 || !songID) return;
 
 		auto manager = MusicDownloadManager::sharedState();
 		auto songObj = manager->getSongInfoObject(songID);
+		if (!songObj) return;
 
 		auto newUrl = "https://www.newgrounds.com/audio/listen/" + std::to_string(songObj->m_songID);
 		SongInfoLayer::create(
