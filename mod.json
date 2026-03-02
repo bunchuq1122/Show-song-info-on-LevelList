@@ -1,0 +1,22 @@
+{
+	"geode": "5.3.0",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "bunchuq1122.show-song-info-on-levellist",
+	"name": "Show song info on LevelList",
+	"version": "v1.0.0",
+	"developer": "Bunchuq1122",
+	"description": "Lets you click the song name",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
+	"tags": [
+		"enhancement",
+		"interface"
+	],
+	"links": {
+		"community": "",
+		"source": ""
+	}
+}
