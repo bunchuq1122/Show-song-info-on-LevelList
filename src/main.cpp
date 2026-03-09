@@ -30,21 +30,19 @@ class $modify(showSongInf, LevelCell) {
 		btn->setScale(1.13f);
 		btn->setAnchorPoint({0.f,0.5f});
 
-        auto menu = CCMenu::create();
-		menu->setID(Mod::get()->getID() + "/touchableSongInfo");
-		menu->setPosition(50.f,33.f);
+        auto menu = m_mainMenu;
+		btn->setPosition(-234.f,-125.f);
 		if(this->m_compactView) {
-			menu->setPosition(64.f,26.f);
+			btn->setPosition(-222.f,-135.f);
 		}
 		menu->addChild(btn);
 		auto chompo = mainLayer->getChildByID("chompo-icon");
 		auto ncs = mainLayer->getChildByID("ncs-icon");
 		if (chompo) {
-			menu->setPositionX(88.f);
+			btn->setPositionX(-186.f);
 		}else if (ncs) {
-			menu->setPositionX(85.f);
+			btn->setPositionX(-190.f);
 		}
-		mainLayer->addChild(menu);
     }
 
     void onSongClicked(CCObject* sender) {
